@@ -38,3 +38,5 @@ if (totalDeProductos > 0) {
 } else {
     alert("No has agregado ningun producto");
 }
+
+/* God */
