@@ -10,7 +10,7 @@ const calcularImpuestos = (precio) => {
 };
 
 let totalDeProductos = 0;
-let agregar = confirm("quieres agregar un producto");
+let agregar = confirm("Quieres agregar un producto");
 
 while (agregar) {
     let precioDelProducto = parseFloat(
@@ -20,9 +20,9 @@ while (agregar) {
     if (!isNaN(precioDelProducto) && precioDelProducto > 0) {
         const precioConIva = calcularImpuestos(precioDelProducto);
         totalDeProductos += precioConIva;
-        alert("producto agregado satisfactoriamente");
+        alert("Producto agregado satisfactoriamente");
 
-        agregar = confirm("Quires agregar otro producto?");
+        agregar = confirm("Quieres agregar otro producto?");
     } else {
         alert("Precio invalido");
     }
@@ -30,7 +30,7 @@ while (agregar) {
 
 if (totalDeProductos > 0) {
     let descuento = parseFloat(
-        prompt("por favor ingresa el porcentaje de descuento")
+        prompt("Por favor ingresa el porcentaje de descuento")
     );
 
     const precioFinal = aplicarDescuento(totalDeProductos, descuento);
